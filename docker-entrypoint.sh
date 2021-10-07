@@ -11,8 +11,7 @@ cd /stor-blockchain || exit 1
 # shellcheck disable=SC1091
 . ./activate
 
-stor init
-# stor init --fix-ssl-permissions
+stor init --fix-ssl-permissions
 
 if [[ ${testnet} == 'true' ]]; then
    echo "configure testnet"
